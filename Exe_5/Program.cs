@@ -71,7 +71,39 @@ namespace Exe_5
             char ch;
             while (true)
             {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1.Menambah Data ke dalam List");
+                    Console.WriteLine("2.Menghapus Data dari dalam List");
+                    Console.WriteLine("3.Melihat semua data di dalam list");
+                    Console.WriteLine("4.Exit");
+                    Console.Write("Masukkan pilhan anda (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            qe.Insert();
+                            break;
+                        case '2':
+                            qe.Delete();
+                            break;
+                        case '3':
+                            qe.Display();
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            Console.WriteLine("Wrong Option");
+                            break;
+                    }
 
+                    
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("\nCheck for the value entered ");
+                }
             }
 
         }
