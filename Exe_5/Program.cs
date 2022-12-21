@@ -14,6 +14,13 @@ namespace Exe_5
     }
     class Queue
     {
+        public Node wiranto, fadlillah;
+
+        public Queue()
+        {
+            wiranto = null;
+            fadlillah = null;
+        }
 
     }
 }
