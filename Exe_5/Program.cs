@@ -21,6 +21,18 @@ namespace Exe_5
             wiranto = null;
             fadlillah = null;
         }
+        public void Delete()
+        {
+            if(wiranto == null)
+            {
+                Console.WriteLine("\nList is Empty");
+                return;
+            }
+            fadlillah = fadlillah.next;
+            if (wiranto == null)
+                fadlillah = null;
+
+        }
 
     }
 }
