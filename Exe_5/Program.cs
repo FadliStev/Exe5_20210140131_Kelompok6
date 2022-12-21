@@ -48,6 +48,9 @@ namespace Exe_5
             fadlillah = fadlillah.next;
             if (wiranto == null)
                 fadlillah = null;
+        }
+        public void Display()
+        {
 
         }
 
