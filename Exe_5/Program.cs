@@ -51,7 +51,7 @@ namespace Exe_5
         }
         public void Display()
         {
-            if(fadlillah == null)
+            if(wiranto == null)
             {
                 Console.WriteLine("\nQueue is Empty");
                 return ;
