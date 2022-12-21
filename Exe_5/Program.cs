@@ -56,7 +56,9 @@ namespace Exe_5
                 Console.WriteLine("\nQueue is Empty");
                 return ;
             }
-
+            Node display;
+            for(display = wiranto; display != null; display = display.next)
+                Console.WriteLine(display.name);
         }
 
     }
