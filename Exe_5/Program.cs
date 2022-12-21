@@ -21,6 +21,23 @@ namespace Exe_5
             wiranto = null;
             fadlillah = null;
         }
+        public void Insert()
+        {
+            string add;
+            Node newnode= new Node();
+            Console.WriteLine("Masukkan Element :");
+            add = Console.ReadLine();
+            newnode.name = add;
+            newnode.next = fadlillah;
+            if(wiranto == null)
+            {
+                wiranto = newnode;
+                fadlillah = newnode;
+                return;
+            }
+            fadlillah.next = newnode;
+            fadlillah = newnode;
+        }
         public void Delete()
         {
             if(wiranto == null)
