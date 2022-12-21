@@ -28,7 +28,7 @@ namespace Exe_5
             Console.WriteLine("Masukkan Element :");
             add = Console.ReadLine();
             newnode.name = add;
-            newnode.next = fadlillah;
+            newnode.next = null;
             if(wiranto == null)
             {
                 wiranto = newnode;
@@ -45,7 +45,7 @@ namespace Exe_5
                 Console.WriteLine("\nList is Empty");
                 return;
             }
-            fadlillah = fadlillah.next;
+            wiranto = wiranto.next;
             if (wiranto == null)
                 fadlillah = null;
         }
@@ -54,7 +54,7 @@ namespace Exe_5
             if(wiranto == null)
             {
                 Console.WriteLine("\nQueue is Empty");
-                return ;
+                return;
             }
             Node display;
             for(display = wiranto; display != null; display = display.next)
